@@ -1,37 +1,57 @@
-/* 
- * AngularJS animation : ng-repeat rules
- * http://www.yearofmoo.com/2013/04/animation-in-angularjs.html
+/*
+ * ng-view
  */
-
-.custom-enter-setup, .custom-leave-setup, .custom-move-setup {
+.reveal-animation.ng-enter {
   -webkit-transition: .5s linear all;
-  -moz-transition: .5s linear all;
-  -o-transition: .5s linear all;
-  transition: .5s linear all;
-  position: relative;
-}
-
-.custom-enter-setup {
-  left: -10px;
-  opacity: 0;
-}
-.custom-enter-setup.custom-enter-start {
-  left: 0;
-  opacity: 1;
-}
-
-.custom-leave-setup {
-  left: 0;
-  opacity: 1;
-}
-.custom-leave-setup.custom-leave-start {
-  left: -10px;
+     -moz-transition: .5s linear all;
+       -o-transition: .5s linear all;
+          transition: .5s linear all;
   opacity: 0;
 }
 
-.custom-move-setup {
-  opacity: 0.5;
-}
-.custom-move-setup.custom-move-start {
+.reveal-animation.ng-enter.ng-enter-active {
   opacity: 1;
+}
+
+/*
+ * ng-repeat
+ */
+.repeat-animation {
+  box-sizing: border-box;
+  height: 48px;
+  line-height: 48px;
+}
+
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  -webkit-transition-delay: .1s;
+     -moz-transition-delay: .1s;
+       -o-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition: .2s linear all;
+     -moz-transition: .2s linear all;
+       -o-transition: .2s linear all;
+          transition: .2s linear all;
+}
+
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave.ng-leave-active,
+.repeat-animation.ng-move {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+}
+
+.repeat-animation.ng-enter.ng-enter-active,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move.ng-move-active {
+  opacity: 1;
+  height: 48px;
+  line-height: 48px;
 }
