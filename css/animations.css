@@ -2,10 +2,10 @@
  * ng-view
  */
 .reveal-animation.ng-enter {
-  -webkit-transition: .5s linear all;
-     -moz-transition: .5s linear all;
-       -o-transition: .5s linear all;
-          transition: .5s linear all;
+  -webkit-transition: .6s linear all;
+     -moz-transition: .6s linear all;
+       -o-transition: .6s linear all;
+          transition: .6s linear all;
   opacity: 0;
 }
 
