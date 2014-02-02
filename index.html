@@ -15,24 +15,18 @@
 <body>
 
     <div id="container">
-        <div>
+        <div ng-controller="MoviesCtrl">
 
             <h1>Movies</h1>
 
             <ul>
-                <li>
-                    <span>Reservoir Dogs</span>
+                <li ng-repeat="movie in movies">
+                    <span>{{movie.title}}</span>
                     <a href="#">Actors</a>
                     <a href="#">Sheet</a>
-                    <span class="year">1992</span>
+                    <span class="year">{{movie.year}}</span>
                 </li>
-                <li>
-                    <span>Pulp Fiction</span>
-                    <a href="#">Actors</a>
-                    <a href="#">Sheet</a>
-                    <span class="year">1994</span>
-                </li>
-          </ul>
+            </ul>
 
       </div>
   </div>
