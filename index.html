@@ -10,29 +10,39 @@
     <title>Tarantino Movies App - An AngularJS Workshop</title>
 
     <link rel="stylesheet" href="css/movies.css"/>
-    <link rel="stylesheet" href="css/animations.css"/>
 
 </head>
 <body>
-    
+
     <div id="container">
-        <div ng-view class="reveal-animation"></div>
-    </div>
+        <div>
+
+            <h1>Movies</h1>
+
+            <ul>
+                <li>
+                    <span>Reservoir Dogs</span>
+                    <a href="#">Actors</a>
+                    <a href="#">Sheet</a>
+                    <span class="year">1992</span>
+                </li>
+                <li>
+                    <span>Pulp Fiction</span>
+                    <a href="#">Actors</a>
+                    <a href="#">Sheet</a>
+                    <span class="year">1994</span>
+                </li>
+          </ul>
+
+      </div>
+  </div>
 
     <p id="footer">
         <a href="https://github.com/antoine-richard/angular-movie-workshop">AngularJS Movie Workshop</a>
     </p>
 
     <script src="components/angular/angular.js"></script>
-    <script src="components/angular/angular-route.js"></script>
-    <script src="components/angular/angular-animate.js"></script>
     <script src="javascript/app.js"></script>
-    <script src="javascript/movies/module.js"></script>
-    <script src="javascript/movies/controllers/movies.js"></script>
-    <script src="javascript/movies/controllers/movie.js"></script>
-    <script src="javascript/movies/controllers/actors.js"></script>
-    <script src="javascript/movies/data/movies.js"></script>
-    <script src="javascript/movies/directives/favorite.js"></script>
     
 </body>
 </html>

@@ -3,15 +3,15 @@
 /**
  * Application
  */
-var app = angular.module('moviesApp', ['moviesModule', 'ngRoute', 'ngAnimate']);
+var app = angular.module('moviesApp', []);
 
 /**
- * Routes
+ * Movies controller
  */
-app.config(['$routeProvider', function($routeProvider) {
-    $routeProvider
-    .when('/movies',                    { controller: 'MoviesCtrl',         templateUrl: 'partials/movies.html' })
-    .when('/movies/:movieId',           { controller: 'MovieDetailCtrl',    templateUrl: 'partials/movie.html'  })
-    .when('/movies/:movieId/actors',    { controller: 'MovieActorsCtrl',    templateUrl: 'partials/actors.html' })
-    .otherwise(                         { redirectTo: '/movies' });
-}]);
+app.controller('MoviesCtrl', function($scope) {
+    $scope.movies = [
+        { title: "Reservoir Dogs", year: 1992 },
+        { title: "Pulp Fiction",   year: 1994 },
+        { title: "Jackie Brown",   year: 1997 }
+    ];
+});
