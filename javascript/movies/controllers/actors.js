@@ -4,7 +4,7 @@
 /**
  * Movie's actors
  */
-app.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesData', function($scope, $routeParams, moviesData) {
+moviesModule.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesData', function($scope, $routeParams, moviesData) {
 
     moviesData.getMovie($routeParams.movieId).success(function(movie) {
         $scope.movie = movie;

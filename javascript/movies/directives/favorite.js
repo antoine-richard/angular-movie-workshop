@@ -1,10 +1,10 @@
-/* global app:false */
+/* global moviesModule:false */
 "use strict";
 
 /**
  * Favorite widget
  */
-app.directive('mvFavorite', function($window) {
+moviesModule.directive('mvFavorite', function($window) {
     return {
         restrict: 'EA',
         template: '<span class="star" ng-click="toggle()"></span>',
@@ -21,7 +21,7 @@ app.directive('mvFavorite', function($window) {
                 var newValue = !($window.localStorage['movie#'+scope.id] === 'true');
                 $window.localStorage['movie#'+scope.id] = newValue;
                 newValue ? element.addClass('filled') : element.removeClass('filled');
-            }
+            };
         }
     };
 });

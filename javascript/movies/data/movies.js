@@ -1,10 +1,10 @@
-/* global app:false */
+/* global moviesModule:false */
 "use strict";
 
 /**
  * Movies data gateway
  */
-app.factory('moviesData', function($http) {
+moviesModule.factory('moviesData', function($http) {
     
     var baseUrl = 'http://restarantino.herokuapp.com/';
 

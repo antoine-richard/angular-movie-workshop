@@ -1,4 +1,4 @@
-/* export moviesModule */
+/* exported moviesModule */
 "use strict";
 
 /**
