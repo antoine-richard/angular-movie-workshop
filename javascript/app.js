@@ -10,6 +10,6 @@ var app = angular.module('moviesApp', ['moviesModule', 'ngRoute']);
  */
 app.config(function($routeProvider) {
     $routeProvider
-    .when('/?',		{ controller: '?', 		templateUrl: '?' })
-    .otherwise(		{ redirectTo: '/?' });
+    .when('/movies',                    { controller: 'MoviesCtrl',         templateUrl: 'partials/movies.html' })
+    .otherwise(                         { redirectTo: '/movies' });
 });
