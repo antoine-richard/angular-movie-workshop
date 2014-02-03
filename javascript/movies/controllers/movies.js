@@ -4,8 +4,8 @@
 /**
  * Movies list
  */
-moviesModule.controller('MoviesCtrl', ['$scope', 'moviesData', function($scope, moviesData) {
-    moviesData.getMovies().success(function(movies) {
+moviesModule.controller('MoviesCtrl', function($scope, $http) {
+    $http.get('http://restarantino.herokuapp.com/movies').success(function(movies) {
         $scope.movies = movies;
     });
-}]);
+});
