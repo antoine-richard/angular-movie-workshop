@@ -9,6 +9,10 @@ Steps
 -----
 
 * intro : app initialization, databinding
+
 * step 1 : controller (given), ng-repeat
 * step 2 : $http
+* step 3 : filters (filter, orderBy)
+
+
 * to be continued...
