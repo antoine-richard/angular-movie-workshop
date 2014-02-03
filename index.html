@@ -19,6 +19,20 @@
 
             <h1>Movies</h1>
 
+            <div class="filter-box">
+                <div>
+                    <label>Filter</label>
+                    <input type="text"/>
+                </div>
+                <div>
+                    <label>Sort by</label>
+                    <select>
+                        <option value="year">Year</option>
+                        <option value="title">Title</option>
+                    </select>
+                </div>
+            </div>
+
             <ul>
                 <li ng-repeat="movie in movies">
                     <span>{{movie.title}}</span>
