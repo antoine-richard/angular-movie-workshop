@@ -1,28 +1,29 @@
 <h2>
-	Title here
-	<a href="#">Home</a>
+	{{movie.title}}
+	<a href="#/movies">Home</a>
 </h2>
 <h3>
 	Info sheet
-	<a href="#">Actors</a>
+	<a href="#/movies/{{movie.id}}/actors">Actors</a>
 </h3>
 
 <ul>
 	<li>
 		<span class="info">Year</span>
-		<span>1970</span>
+		<span>{{movie.year}}</span>
 	</li>
 	<li>
 		<span class="info">Duration</span>
-		<span>3 minutes</span>
+		<span>{{movie.duration}} minutes</span>
 	</li>
 	<li>
 		<span class="info">Budget</span>
-		<span>$1 million</span>
+		<span>${{movie.budget}} million</span>
 	</li>
 	<li>
 		<span class="info">Favorite</span>
+		<mv-favorite id="movie.id"></mv-favorite>
 	</li>
 </ul>
 
-<img src="#">
+<img ng-src="{{movie.poster}}">
