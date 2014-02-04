@@ -11,7 +11,7 @@ Backend
 -------
 
 REST services for this workshop (aka RESTarantino) are published at [restarantino.herokuapp.com](http://restarantino.herokuapp.com).  
-Please see documentation at http://restarantino.herokuapp.com/index.html
+Please refer to [the documentation](http://restarantino.herokuapp.com/index.html).
 
 
 Workshop steps
@@ -84,7 +84,7 @@ _Continuing on previous step_
 
 * directive (save favorite movies in the localStorage)
 
-### To be continued
+### To be continued...
 
 
 ---
