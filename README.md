@@ -10,8 +10,7 @@ See live preview at http://antoine-richard.github.io/angular-movie-workshop/
 Backend 
 -------
 
-REST services for this workshop (aka RESTarantino) are published at [restarantino.herokuapp.com](http://restarantino.herokuapp.com).
-
+REST services for this workshop (aka RESTarantino) are published at [restarantino.herokuapp.com](http://restarantino.herokuapp.com).  
 Please see documentation at http://restarantino.herokuapp.com/index.html
 
 
@@ -84,6 +83,9 @@ _Continuing on previous step_
 _Continuing on previous step_
 
 * directive (save favorite movies in the localStorage)
+
+### To be continued
+
 
 ---
 
