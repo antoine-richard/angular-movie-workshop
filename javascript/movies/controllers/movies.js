@@ -4,8 +4,8 @@
 /**
  * Movies list
  */
-moviesModule.controller('MoviesCtrl', ['$scope', 'moviesData', function($scope, moviesData) {
+moviesModule.controller('MoviesCtrl', function($scope, moviesData) {
     moviesData.getMovies().success(function(movies) {
         $scope.movies = movies;
     });
-}]);
+});

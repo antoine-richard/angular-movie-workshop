@@ -4,8 +4,8 @@
 /**
  * Movie info sheet
  */
-moviesModule.controller('MovieDetailCtrl', ['$scope', '$routeParams', 'moviesData', function($scope, $routeParams, moviesData) {
+moviesModule.controller('MovieDetailCtrl', function($scope, $routeParams, moviesData) {
     moviesData.getMovie($routeParams.movieId).success(function(movie) {
         $scope.movie = movie;
     });
-}]);
+});

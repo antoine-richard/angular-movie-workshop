@@ -4,7 +4,7 @@
 /**
  * Movie's actors
  */
-moviesModule.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesData', function($scope, $routeParams, moviesData) {
+moviesModule.controller('MovieActorsCtrl', function($scope, $routeParams, moviesData) {
 
     moviesData.getMovie($routeParams.movieId).success(function(movie) {
         $scope.movie = movie;
@@ -19,4 +19,4 @@ moviesModule.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesDat
             'background-position': '0 -'+(actorId * 48)+'px'
         };
     };
-}]);
+});
