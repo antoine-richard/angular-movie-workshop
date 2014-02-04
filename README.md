@@ -23,7 +23,7 @@ _Starting point: [branch step-1-start](https://github.com/antoine-richard/angula
 ### Step 2
 _Continuing on previous step_
 
-* server communication with $http
+* server communication with $http (see following backend section)
 
 ### Step 3
 _Continuing on previous step_
@@ -42,3 +42,10 @@ TODO:
 * step 7: service
 * step 8: animation (or switch with previous ?)
 * step 9: directive
+
+
+Backend - aka RESTarantino
+--------------------------
+
+REST services for this workshop are puplished at http://restarantino.herokuapp.com
+Please see documentation at http://restarantino.herokuapp.com/index.html
