@@ -35,7 +35,7 @@ _Starting point: [branch step-1-start](https://github.com/antoine-richard/angula
 
 _Continuing on previous step_
 
-* server communication with $http (see following backend section)
+* server communication with $http (see the backend documentation)
 
 ### Step 3
 
@@ -47,18 +47,44 @@ _Continuing on previous step_
 ### Step 4
 
 _Starting point: [branch step-4-start](https://github.com/antoine-richard/angular-movie-workshop/tree/step-4-start)_  
-(moved HTML content from index to a partial, added a module)
+_(moved HTML content from index to a partial, added a module)_
 
 * insight of modules
 * routes, ng-view
 
+### Step 5
 
-TO DOCUMENT
+_Continuing on previous step_
 
-* step 5: controllers, templates
-* step 6: ng-class, function in scope
-* step 7: service
-* step 8: animation
-* step 9: directive
+* controllers
+* templates
+* ng-src
+
+### Step 6
+
+_Continuing on previous step_
+
+* ng-class (with a helper function)
+
+### Step 7
+
+_Starting point: [branch step-7-start](https://github.com/antoine-richard/angular-movie-workshop/tree/step-7-start)_  
+_(added service squeleton, added directive squeleton)_
+
+* factory (and reminder of the JS module pattern)
+
+### Step 8
+
+_Continuing on previous step_
+
+* animations (on ng-view and ng-repeat)
+
+### Step 9
+
+_Continuing on previous step_
+
+* directive (save favorite movies in the localStorage)
+
+---
 
 ![mockup](https://dl.dropboxusercontent.com/u/37908099/angular-movie-workshop/angular-movie-mockup.png)
