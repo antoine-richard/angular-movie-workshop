@@ -5,6 +5,15 @@ An AngularJS workshop based on a movie-listing application.
 
 See live preview at http://antoine-richard.github.io/angular-movie-workshop/
 
+
+Backend 
+-------
+
+REST services for this workshop (aka RESTarantino) are published at [restarantino.herokuapp.com](http://restarantino.herokuapp.com).
+
+Please see documentation at http://restarantino.herokuapp.com/index.html
+
+
 Workshop steps
 --------------
 
@@ -42,10 +51,3 @@ TODO:
 * step 7: service
 * step 8: animation (or switch with previous ?)
 * step 9: directive
-
-
-Backend - aka RESTarantino
---------------------------
-
-REST services for this workshop are puplished at http://restarantino.herokuapp.com
-Please see documentation at http://restarantino.herokuapp.com/index.html
