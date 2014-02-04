@@ -9,7 +9,7 @@
 
 <ul>
 	<li ng-repeat="actor in actors">
-		<span class="photo">{{actor.name}}</span>
+		<span class="photo" ng-style="photoOffset(actor.id)">{{actor.name}}</span>
 		<span class="role">{{actor.role}}</span>
 	</li>
 </ul>

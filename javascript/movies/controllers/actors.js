@@ -14,4 +14,10 @@ moviesModule.controller('MovieActorsCtrl', function($scope, $http, $routeParams)
         $scope.actors = actors;
     });
 
+    $scope.photoOffset = function(actorId) {
+        return {
+            'background-position': '0 -'+(actorId * 48)+'px'
+        };
+    };
+
 });
