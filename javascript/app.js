@@ -3,7 +3,7 @@
 /**
  * Application
  */
-var app = angular.module('moviesApp', ['moviesModule', 'ngRoute']);
+var app = angular.module('moviesApp', ['moviesModule', 'ngRoute', 'ngAnimate']);
 
 /**
  * Routes

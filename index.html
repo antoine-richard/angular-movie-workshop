@@ -10,12 +10,13 @@
     <title>Tarantino Movies App - An AngularJS Workshop</title>
 
     <link rel="stylesheet" href="css/movies.css"/>
+    <link rel="stylesheet" href="css/animations.css"/>
 
 </head>
 <body>
     
     <div id="container">
-        <div ng-view></div>
+        <div ng-view class="reveal-animation"></div>
     </div>
 
     <p id="footer">
@@ -24,6 +25,7 @@
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular/angular-route.js"></script>
+    <script src="components/angular/angular-animate.js"></script>
     <script src="javascript/app.js"></script>
     <script src="javascript/movies/module.js"></script>
     <script src="javascript/movies/controllers/movies.js"></script>
