@@ -4,13 +4,13 @@
 /**
  * Movie's actors
  */
-moviesModule.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesData', function($scope, $routeParams, moviesData) {
+moviesModule.controller('MovieActorsCtrl', function($scope, $http, $routeParams) {
 
-    moviesData.getMovie($routeParams.movieId).success(function(movie) {
+    $http.get('http://restarantino.herokuapp.com/movies/'+$routeParams.movieId).success(function(movie) {
         $scope.movie = movie;
     });
     
-    moviesData.getActors($routeParams.movieId).success(function(actors) {
+    $http.get('http://restarantino.herokuapp.com/movies/'+$routeParams.movieId+'/actors').success(function(actors) {
         $scope.actors = actors;
     });
 
@@ -19,4 +19,5 @@ moviesModule.controller('MovieActorsCtrl', ['$scope', '$routeParams', 'moviesDat
             'background-position': '0 -'+(actorId * 48)+'px'
         };
     };
-}]);
+
+});
