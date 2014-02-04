@@ -19,5 +19,5 @@ moviesModule.controller('MovieActorsCtrl', function($scope, $routeParams, movies
             'background-position': '0 -'+(actorId * 48)+'px'
         };
     };
-    
+
 });
