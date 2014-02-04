@@ -4,13 +4,13 @@
 /**
  * Movie's actors
  */
-moviesModule.controller('MovieActorsCtrl', function($scope, $http, $routeParams) {
+moviesModule.controller('MovieActorsCtrl', function($scope, $routeParams, moviesData) {
 
-    $http.get('http://restarantino.herokuapp.com/movies/'+$routeParams.movieId).success(function(movie) {
+    moviesData.getMovie($routeParams.movieId).success(function(movie) {
         $scope.movie = movie;
     });
     
-    $http.get('http://restarantino.herokuapp.com/movies/'+$routeParams.movieId+'/actors').success(function(actors) {
+    moviesData.getActors($routeParams.movieId).success(function(actors) {
         $scope.actors = actors;
     });
 
