@@ -63,7 +63,7 @@ _Continuing on previous step_
 
 _Continuing on previous step_
 
-* ng-class (with a helper function)
+* ng-style (with a helper function)
 
 ### Step 7
 
