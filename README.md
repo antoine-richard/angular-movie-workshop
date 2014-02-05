@@ -23,7 +23,7 @@ _Starting point: [branch intro-start](https://github.com/antoine-richard/angular
 * application initialization
 * databinding (ng-model, double curly brace)
 
-_[Diff](https://github.com/antoine-richard/angular-movie-workshop/compare/intro-start...intro-end)_
+[Diff](https://github.com/antoine-richard/angular-movie-workshop/compare/intro-start...intro-end)
 
 ### Step 1
 
