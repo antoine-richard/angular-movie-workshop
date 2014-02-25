@@ -10,9 +10,9 @@ See live preview at http://antoine-richard.github.io/angular-movie-workshop/
 Backend 
 -------
 
-REST services for this workshop (aka RESTarantino) are published at [restarantino.herokuapp.com](http://restarantino.herokuapp.com).  
-Please refer to [the documentation](http://restarantino.herokuapp.com/index.html).
+REST services (aka RESTarantino) for this workshop are documented [here](http://restarantino.herokuapp.com/index.html).
 
+__If you want to replay this workshop, please host the backend on your own server.__ Sources of the backend are [available on Github](https://github.com/antoine-richard/restarantino).
 
 Workshop steps
 --------------
