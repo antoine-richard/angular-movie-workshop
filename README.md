@@ -1,7 +1,7 @@
 AngularJS Movie Workshop
 ========================
 
-An AngularJS workshop based on a movie-listing application.
+An AngularJS introductory workshop based on a movie-listing application.
 
 See live preview at http://antoine-richard.github.io/angular-movie-workshop/
 
